@@ -36,7 +36,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
                     user.getAuthorities()
             );
         }else {
-            throw new BadCredentialsException("Something went wrong!");
+            throw new BadCredentialsException("Something went wrong!!!");
         }
     }
 
