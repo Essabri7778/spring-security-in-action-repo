@@ -32,6 +32,8 @@ public class ProjectConfig extends WebSecurityConfigurerAdapter{
             throws Exception {
         http.httpBasic(c -> {
             c.realmName("OTHER");
+            c.authenticationEntryPoint(new CustomEntryPoint());
+            
         });
 
         http.authorizeRequests().anyRequest().authenticated();
