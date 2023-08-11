@@ -17,4 +17,5 @@ public class HomeController {
         Authentication a = context.getAuthentication();
         return "Hello, "+ a.getName() + "!";
     }
+
 }
